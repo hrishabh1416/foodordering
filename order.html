@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+<header>
+    <h1>Food Order Page</h1>
+</header>
+
+<div class="container">
+    <h2>Menu</h2>
+    <div class="menu">
+        <div class="food-item">
+            <img src="pizza.jpeg" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>$12.99</p>
+            <div class="order-form">
+                <label for="pizza">Quantity:</label>
+                <input type="number" id="pizza" name="pizza" min="0" value="0">
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="pasta.jpeg" alt="Pasta">
+            <h3>Pasta</h3>
+            <p>$10.99</p>
+            <div class="order-form">
+                <label for="pasta">Quantity:</label>
+                <input type="number" id="pasta" name="pasta" min="0" value="0">
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="burger.jpeg" alt="Burger">
+            <h3>Burger</h3>
+            <p>$8.99</p>
+            <div class="order-form">
+                <label for="burger">Quantity:</label>
+                <input type="number" id="burger" name="burger" min="0" value="0">
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="sushi.jpeg" alt="Sushi">
+            <h3>Sushi</h3>
+            <p>$14.99</p>
+            <div class="order-form">
+                <label for="sushi">Quantity:</label>
+                <input type="number" id="sushi" name="sushi" min="0" value="0">
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="salad.jpeg" alt="Salad">
+            <h3>Salad</h3>
+            <p>$6.99</p>
+            <div class="order-form">
+                <label for="salad">Quantity:</label>
+                <input type="number" id="salad" name="salad" min="0" value="0">
+            </div>
+        </div>
+    </div>
+
+    <h2>Total Price: $<span id="total">0.00</span></h2>
+    <button onclick="calculateTotal()">Place Order</button>
+</div>
+
+<script src="order.js"></script>
+</body>
+</html>
